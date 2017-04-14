@@ -1,0 +1,35 @@
+@charset="utf-8";
+
+/*base*/
+body {
+	height: 3000px;
+}
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.gl-nav {
+	width: 250px;
+	height: 825px;
+	background: url("../images/TopPage_02.png") 0 0 no-repeat;
+	position: absolute;
+	top: 0;
+	left: 140px;
+}
+ul {
+	list-style-type: none;
+	
+}
+li {
+	
+}
+a {
+	display: block;
+	width: 180px;
+	height: 58px;
+	border-bottom: 1px solid #ffffff;
+	font-size: 24px;
+	line-height: 4em;
+	text-decoration: none;
+}
