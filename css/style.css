@@ -13,8 +13,8 @@ body {
 }
 .deco {
 	width: 100%;
-	height: 850px;
-	background-image: url("../images/leaf.gif");
+	height: 1500px;
+	background-image: url("../images/leaf.png");
 	background-size: contain;
 	position: absolute;
 	top: 0;
@@ -24,6 +24,15 @@ ul {
 }
 a {
 	text-decoration: none;
+}
+/*Smart Phone (base)*/
+@media screen and (max-width:480px) {
+	body {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		/*float: none;*/
+	}
 }
 /*hero*/
 .hero {
@@ -50,8 +59,6 @@ a {
 	list-style-type: none;
 	margin:  0 35px 0;
 	overflow: hidden;
-
-
 }
 .sub {
 	margin-left: 35px;
@@ -70,9 +77,15 @@ a {
 	border-bottom: 1px dashed #ffffff;
 	font-size: 18px;
 	line-height: 5.5em;
-
 }
-/*top page*/
+/*Smart Phone (gl-nav)*/
+@media screen and (max-width:1300px) {
+	.gl-nav {left: 0;}
+}
+@media screen and (max-width:480px) {
+	.gl-nav {display: none;}
+}
+/*top page
 /*map*/
 .map {
 	height: 500px;
@@ -112,23 +125,103 @@ a {
 		height: 800px;
 		color: #ffffff;
 }
-.room-c {
-	/*height: 400px;*/
-	margin: 50px 0 50px;
-	font-size: 24px;
-}
 .room-c1 {
 	width: 100%;
-	height: 500px;
+	height: 450px;
+	margin:  50px 0 0;
 	text-align: center;
 }
+.room-c {
+	height: 350px;
+	width: 50%;
+	margin: 20px 0 50px;
+	font-size: 24px;
+}
 .room-c2 {
+	float: left;
 }
 .room-c3 {
+	float: right;
+}
+.room-c3 img {
+	width: 500px;
+	height: 280px;
 }
 .room button {
 	width: 200px;
 	height: 70px;
 	background-color: #90b131;
 	font-size: 20px;
+}
+/*seat.html*/
+.seat .main-img {
+	height: 850px;
+	/*width: 700px;*/
+	padding: 250px 0 0;
+	float: right;
+	/*margin-left: 390px;*/
+	font-size: 24px;
+	color: #ffffff;
+}
+.seat .main-img img {
+	width: 700px;
+}
+.article {
+	width: 100%;
+	height: 500px;
+	color: #ffffff;
+	padding: 50px 0 50px;
+}
+.article h2 {
+	font-size: 36px;
+}
+.article p {
+	font-size: 24px;
+}
+.article:nth-child(odd) {
+	background-color: rgba(97,112,107,0.7);
+}
+.article img {
+	width: 300px;
+	height: 400px;
+}
+.A img, .C img {
+	float: right;
+}
+.A-sub img, .B img {
+	float: left;
+}
+.A-sub {
+	width: 700px;
+	height: 225px;
+	margin-top: 50px;
+}
+.A-sub img {
+	width: 300px;
+	height: 225px;
+}
+.seat .text {
+	width: 700px;
+}
+.seat .text:nth-child(odd) {
+	float: left;
+}
+.seat .B .text {
+	text-align: right;
+	float: right;
+}
+.D {
+	height: 550px;
+	background-color: rgba(144,177,49,0.7);
+}
+.D-wrapper {
+	overflow: hidden;
+	width: 1280px;
+	margin: 0 auto;
+}
+.D figure {
+	margin: 0 63px 0;
+	float: left;
+	font-size: 24px;
+	text-align: center;
 }
