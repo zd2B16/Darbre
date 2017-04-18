@@ -1,75 +1,144 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ダルブル</title>
-	<link rel="stylesheet" href="css/sanitize.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"/>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>ビストロ・ダルブル 恵比寿店(Bistro D'arbre)</title>
+        <link rel="stylesheet" href="css/sanitize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="dist/vegas.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="dist/vegas.min.js"></script>
+        <script>
+        $(function() {
+            $('.hero').vegas({
+                slides: [{
+                    src: 'images/slide01.jpg'
+                }, {
+                    src: 'images/slide02.jpg'
+                }, {
+                    src: 'images/slide03.jpg'
+                }]
+            });
+        });
+        </script>
+    </head>
 
-<body>
-	<div class="hero">
-		<img src="http://lorempixel.com/1800/850/food/5/Dummy-Text" alt="" height="850px">
-	</div>
-	<div class="deco"></div>
-	<div class="wrapper">
-		<div class="gl-nav">
-			<h1><img src="images/logo.png" alt="logo" width="240px" height="150px"></h1>
-			<ul>
-				<li><a href="index.html">ホーム</a></li>
-				<li><a href="">アクセス</a></li>
-				<li><a href="seat.html">座席</a></li>
-				<li><a href="">メニュー</a></li>
-				<li class="sub"><a href="" class="sub-menu">料理</a></li>
-				<li class="sub"><a href="" class="sub-menu">ドﾘﾝｸ</a></li>
-				<li class="sub"><a href="" class="sub-menu">ランチ</a></li>
-				<li class="sub"><a href="" class="sub-menu">コース</a></li>
-			</ul>
-		</div>
-		<!-- .gl-nav end -->
-	</div>
-	<!-- .wrapper for gl-nav end -->
-	<div class="map">
-		<div class="wrapper">
-			<div class="map-c map-c1">
-				<h2>ビストロ・ダルブル恵比寿</h2>
-				<p>〒150-0022</p>
-				<p>東京都渋谷区恵比寿南1-4-8</p>
-				<p>JR恵比寿駅より徒歩2分</p>
-				<p>03-3760-0447</p>
-				<p>駐車場なし</p>
-				<p>※恐れ入りますが、お近くの有料駐車場をご利用下さい。</p>
-				<a target="_blank"href="https://www.google.co.jp/maps/place/%E3%80%92150-0022+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E5%8D%97%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%98/@35.6461543,139.7064758,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b40f129a539:0x26a88a99211251b4!8m2!3d35.6461543!4d139.7086645">
-					<button type="button">google map を見る</button>
-				</a>
-			</div>
-			<div class="map-c map-c2">
-				<img src="images/map.png" height="400" width="533" alt="">
-			</div>
-		</div>
-		<!-- .wrapper for .map end -->
-	</div>
-	<!-- .map end -->
-	<div class="room">
-		<div class="wrapper">
-			<div class="room-c1">
-				<img src="images/room.png" alt="room">
-			</div>
-			<div class="room-c room-c2">
-				<p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>2階建て一軒家で店内広々</p>
-				<p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>少人数～各種パーティーまで</p>
-				<p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>大人気！冬でも暖かな中庭テラス</p>
-				<p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>個室有・貸切可</p>
-				<button type="button">もっと詳しく見る</button>
-			</div>
-			<div class="room-c room-c3">
-				<img src="images/room/room9.jpg" alt="room">
-			</div>
-		</div><!-- .wrapper for .room end -->
-	</div><!-- .room end -->
-</body>
+    <body>
+        <div class="hero">
+            <!-- <img src="http://lorempixel.com/1800/850/food/5/Dummy-Text" alt="" height="850px"> -->
+        </div>
+        <div class="deco"></div>
+        <div class="wrapper">
+            <div class="gl-nav">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" width="240px" height="150px"></a></h1>
+                <ul>
+                    <li><a class="current" href="index.html"><span>Home</span><br>ホーム</a></li>
+                    <li><a href="#map"><span>Access</span><br>アクセス</a></li>
+                    <li><a href="seat.html"><span>Seat</span><br>座席</a></li>
+                    <li><span>Menu</span><br>メニュー</li>
+                    <li class="sub"><a href="" class="sub-menu"><span>Dishes</span><br>料理</a></li>
+                    <li class="sub"><a href="" class="sub-menu"><span>Drink</span><br>ドﾘﾝｸ</a></li>
+                    <li class="sub"><a href="" class="sub-menu"><span>Lunch</span><br>ランチ</a></li>
+                    <li class="sub"><a href="" class="sub-menu"><span>Course</span><br>コース</a></li>
+                </ul>
+            </div>
+            <!-- .gl-nav end -->
+        </div>
+        <!-- .wrapper for gl-nav end -->
+        <div id="map" class="map">
+            <div class="wrapper">
+                <div class="map-c map-c1">
+                    <h2>ビストロ・ダルブル恵比寿</h2>
+                    <p>〒150-0022</p>
+                    <p>東京都渋谷区恵比寿南1-4-8</p>
+                    <p>JR恵比寿駅より徒歩2分</p>
+                    <p>03-3760-0447</p>
+                    <p>駐車場なし</p>
+                    <p>※恐れ入りますが、お近くの有料駐車場をご利用下さい。</p>
+                    <a target="_blank" href="https://www.google.co.jp/maps/place/%E3%80%92150-0022+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E6%81%B5%E6%AF%94%E5%AF%BF%E5%8D%97%EF%BC%91%E4%B8%81%E7%9B%AE%EF%BC%94%E2%88%92%EF%BC%98/@35.6461543,139.7064758,17z/data=!3m1!4b1!4m5!3m4!1s0x60188b40f129a539:0x26a88a99211251b4!8m2!3d35.6461543!4d139.7086645">
+                        <button type="button">google map を見る</button>
+                    </a>
+                </div>
+                <div class="map-c map-c2">
+                    <img src="images/map.png" height="400" width="533" alt="">
+                </div>
+            </div>
+            <!-- .wrapper for .map end -->
+        </div>
+        <!-- .map end -->
+        <div class="room">
+            <div class="wrapper">
+                <h2>店内MAP</h2>
+                <p>ダルブルの空間はいろいろな仕切り方ができます</p>
+                <div class="room-c1">
+                    <img src="images/room.png" alt="room">
+                </div>
+                <div class="room-c room-c2">
+                    <p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>2階建て一軒家で店内広々</p>
+                    <p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>少人数～各種パーティーまで</p>
+                    <p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>大人気！冬でも暖かな中庭テラス</p>
+                    <p><i class="fa fa-cutlery fa-fw" aria-hidden="true"></i>個室有・貸切可</p>
+                    <a href="seat.html">
+                        <button type="button">もっと詳しく見る</button>
+                    </a>
+                </div>
+                <div class="room-c room-c3">
+                    <img src="images/room/room9.jpg" alt="room">
+                </div>
+            </div>
+            <!-- .wrapper for .room end -->
+        </div>
+        <!-- .room end -->
+        <div class="time">
+            <div class="wrapper">
+                <h2>営業時間</h2>
+                <p>定休日：　火曜日</p>
+                <table>
+                    <tr>
+                        <th colspan="2"></th>
+                        <td>月</td>
+                        <td>水</td>
+                        <td>木</td>
+                        <td>金</td>
+                        <td>土</td>
+                        <td>日・祝</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Lunch</th>
+                        <td colspan="3">-</td>
+                        <td>12:00~14:00</td>
+                        <td colspan="2">12:00~14:30</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Dinner</th>
+                        <td>last order</td>
+                        <td colspan="3">18:00~22:30</td>
+                        <td colspan="2">18:00~23:30</td>
+                        <td>18:00~21:30</td>
+                    </tr>
+                    <tr>
+                        <td>close</td>
+                        <td colspan="3">23:30</td>
+                        <td colspan="2">24:00</td>
+                        <td>22:00</td>
+                    </tr>
+                </table>
+                <p>※カード決済が可能です。(VISA, MASTER, JCB, AMEX)</p>
+                <p>※別途サービス料10%を頂戴しております。</p>
+                <p>※ペットはテラス席のみ可。(1組様一匹まで)
+                    <br>　恐れ入りますが、5歳以下のお子様はお断りさせて頂いております。
+                    <br>　いずれも事前のご予約をお願い致します。</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> ご予約電話番号 <strong>03-3760-0447</strong></p>
+            </div>
+            <!-- .wrapper end -->
+        </div>
+        <!-- .time end -->
+        <footer>
+            <p><small>&copy;2017 Bistro D'arbre All Rights Reserved.</small></p>
+        </footer>
+    </body>
 
 </html>
