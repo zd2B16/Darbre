@@ -8,6 +8,32 @@
         <link rel="stylesheet" href="css/sanitize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+        //■page topボタン
+        $(function(){
+            var topBtn=$('#pageTop');
+            topBtn.hide();
+        //◇ボタンの表示設定
+        $(window).scroll(function(){
+            if($(this).scrollTop()>80){
+            //---- 画面を80pxスクロールしたら、ボタンを表示する
+            topBtn.fadeIn();
+        }else{
+            //---- 画面が80pxより上なら、ボタンを表示しない
+            topBtn.fadeOut();
+        } 
+        });
+
+        // ◇ボタンをクリックしたら、スクロールして上に戻る
+        topBtn.click(function(){
+            $('body,html').animate({
+                scrollTop: 0},500);
+            return false;
+        });
+
+        });
+    </script>
     </head>
 
     <body class="seat">
@@ -97,6 +123,7 @@
             </div>
         </div>
         <!-- .D end -->
+        <p id="pageTop"><a href="#">page top</a></p>
         <footer>
             <p><small>&copy;2017 Bistro D'arbre All Rights Reserved.</small></p>
         </footer>
