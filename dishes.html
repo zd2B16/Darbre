@@ -3,11 +3,12 @@
 
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>料理</title>
         <link rel="stylesheet" href="css/sanitize.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css" />
+            <link rel="icon" href="images/fav.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
         <script>
         //■page topボタン
@@ -22,7 +23,7 @@
         }else{
             //---- 画面が80pxより上なら、ボタンを表示しない
             topBtn.fadeOut();
-        } 
+        }
         });
 
         // ◇ボタンをクリックしたら、スクロールして上に戻る
@@ -37,6 +38,19 @@
     </head>
 
     <body class="dishes">
+    <div class="gl-nav-s">
+        <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" width="240px" height="auto"></a></h1>
+            <ul>
+                <li><a href="index.html"><span>Home</span><br>ホーム</a></li>
+                <li><a href="#map"><span>Access</span><br>アクセス</a></li>
+                <li><a href="seat.html"><span>Seat</span><br>座席</a></li>
+                <li><span>Menu</span><br>メニュー</li>
+                <li class="sub"><a class="current" href="dishes.html" class="sub-menu"><span>Dishes</span><br>料理</a></li>
+                <li class="sub"><a href="drink.html" class="sub-menu"><span>Drink</span><br>ドﾘﾝｸ</a></li>
+                <li class="sub"><a href="lunch_course.html#lunch" class="sub-menu"><span>Lunch</span><br>ランチ</a></li>
+                <li class="sub"><a href="lunch_course.html#course" class="sub-menu"><span>Course</span><br>コース</a></li>
+            </ul>
+    </div>
         <div class="deco"></div>
         <div class="main-img">
             <img src="images/slide04.jpg" width="100%" height="auto" alt="dishes">
